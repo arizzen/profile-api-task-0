@@ -28,9 +28,9 @@ A simple RESTful API built with **Node.js/Express** that returns your profile in
 }
 
 
-🛠️ Setup Instructions
+ 🛠️ Setup Instructions
 
-1️⃣ Clone the Repository
+ 1️⃣ Clone the Repository
 git clone https://github.com/arizzen/profile-api-task-0.git
 cd profile-api
 
