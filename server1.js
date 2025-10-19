@@ -2,10 +2,12 @@ import express from "express";
 import axios from "axios";
 import cors from "cors";
 
-
-
 const app = express();
 app.use(cors());
+
+app.get("/", (req, res) => {
+  res.redirect("/me");
+});
 
 app.get("/me", async (req, res) => {
   try {
@@ -19,13 +21,11 @@ app.get("/me", async (req, res) => {
         stack: "Node.js/Express",
       },
       timestamp: new Date(). toISOString(),
-      fact: data.fact,
-      
+      fact: data.fact,  
     };
     res.status(200).json(response);
   } catch (error) {
     console.log( "Error catching fact:", error.message);
-
     res.status(500).json({
       status: "error",
       message: "Failed to fetch cat fact",
