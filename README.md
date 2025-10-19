@@ -38,7 +38,7 @@ cd profile-api
 npm install
 
 3️⃣ Run Locally
-node server.js
+node server1.js
 
 Now opew your browser and visit:
 http://localhost:1100/me
